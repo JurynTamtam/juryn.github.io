@@ -3,42 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn the basics of web development using HTML, CSS, and JavaScript.">
-    <meta name="keywords" content="Web Development, HTML, CSS, JavaScript, Tutorial">
-    <meta name="author" content="Your Name">
-    <title>Static Website</title>
-    
-    <!-- SEO Title Tag -->
-    <meta property="og:title" content="Learn Web Development Basics">
-    <meta property="og:description" content="This website provides a basic understanding of web development using HTML, CSS, and JavaScript.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://juryntamtam.github.io/juryn.github.io/">
-    <meta property="og:image" content="image.jpg">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <!-- Link to CSS -->
+    <meta name="description" content="Your go-to bookstore for the best reads.">
+    <meta name="keywords" content="books, bookstore, literature">
+    <meta name="author" content="Juryn Tamtam and team">
+    <title>Classy Bookstore</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Static Website</h1>
-        <p>Learn Web Development Basics</p>
+        <h1>Welcome to Classy Bookstore</h1>
+        <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>About</h2>
-            <p>This website showcases the basic structure of HTML, styled with CSS, and enhanced with JavaScript interactivity.</p>
-        </section>
-    </main>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Classy Bookstore offers a wide range of books across all genres. Our mission is to provide quality reads to book lovers everywhere.</p>
+    </section>
+
+    <section id="books">
+        <h2>Our Collection</h2>
+        <div class="book-list">
+            <div class="book-item">
+                <img src="https://covers.openlibrary.org/b/id/9870138-L.jpg" alt="Book Title 1">
+                <h3>Book Title 1</h3>
+                <p>Author: Author Name</p>
+            </div>
+            <div class="book-item">
+                <img src="https://covers.openlibrary.org/b/id/8282764-L.jpg" alt="Book Title 2">
+                <h3>Book Title 2</h3>
+                <p>Author: Author Name</p>
+            </div>
+            <div class="book-item">
+                <img src="https://covers.openlibrary.org/b/id/8253016-L.jpg" alt="Book Title 3">
+                <h3>Book Title 3</h3>
+                <p>Author: Author Name</p>
+            </div>
+            <div class="book-item">
+                <img src="https://covers.openlibrary.org/b/id/7222211-L.jpg" alt="Book Title 4">
+                <h3>Book Title 4</h3>
+                <p>Author: Author Name</p>
+            </div>
+            <div class="book-item">
+                <img src="https://covers.openlibrary.org/b/id/7897878-L.jpg" alt="Book Title 5">
+                <h3>Book Title 5</h3>
+                <p>Author: Author Name</p>
+            </div>
+            <div class="book-item">
+                <img src="https://covers.openlibrary.org/b/id/8368981-L.jpg" alt="Book Title 6">
+                <h3>Book Title 6</h3>
+                <p>Author: Author Name</p>
+            </div>
+            <div class="book-item">
+                <img src="https://covers.openlibrary.org/b/id/8057788-L.jpg" alt="Book Title 7">
+                <h3>Book Title 7</h3>
+                <p>Author: Author Name</p>
+            </div>
+            <div class="book-item">
+                <img src="https://covers.openlibrary.org/b/id/7099441-L.jpg" alt="Book Title 8">
+                <h3>Book Title 8</h3>
+                <p>Author: Author Name</p>
+            </div>
+            <div class="book-item">
+                <img src="https://covers.openlibrary.org/b/id/8100643-L.jpg" alt="Book Title 9">
+                <h3>Book Title 9</h3>
+                <p>Author: Author Name</p>
+            </div>
+            <div class="book-item">
+                <img src="https://covers.openlibrary.org/b/id/8255727-L.jpg" alt="Book Title 10">
+                <h3>Book Title 10</h3>
+                <p>Author: Author Name</p>
+            </div>
+            <!-- Add more books as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
 
     <footer>
-        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        <p>&copy; 2024 Classy Bookstore. All rights reserved.</p>
     </footer>
 
-    <!-- Link to JavaScript -->
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
