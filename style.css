@@ -5,22 +5,36 @@ body {
     background-color: #F7F9FA; /* Light gray background */
     color: #2C3E50; /* Dark blue */
 }
-
 header {
-    background-color: #34495E; /* Dark blue */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt7_fU2fWwuVfZG0-tnf6XDoelMRJkAmv4nw&s'); /* Replace with your image path */
+    background-size: contain; /* Makes sure the image fits without stretching */
+    background-repeat: repeat; /* Prevents the image from repeating if it's smaller than the header */
+    background-position: left;
+    background-color: #34495E; /* Fallback color */
     color: white;
-    padding: 30px;
+    padding: 60px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.h1 {
+  
+    font-family: 'Pacifico', cursive; /* Use 'Pacifico' font or any cursive font */
+    font-size: 2.3em; /* Adjust size for emphasis */
+    color: rgb(8, 8, 8); /* Adjust text color as needed */
+
+    text-align: center;
+     /* Ensures the background wraps only around the text */
+    border-radius: 5px; /* Optional: rounded corners for a smoother effect */
 }
 
 nav {
     position: relative;
+  
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: 0;  text-align: center;
 }
 
 nav ul li {
@@ -29,19 +43,24 @@ nav ul li {
 }
 
 nav a {
-    color: white;
+    color: rgb(255, 250, 250);
     text-decoration: none;
     font-weight: bold;
+    background-color: #407e7e;
+    padding: 7px;
+    border-radius: 3px;
 }
 
 nav a:hover {
     text-decoration: underline;
+    background-color: #194747;
 }
 
 .menu-toggle {
     display: none;
-    background-color: #2980B9; /* Classy blue */
+    background-color: #0b70b3; /* Classy blue */
     color: white;
+    font-weight: bold;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
@@ -132,7 +151,7 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 35%; /* Full width inputs */
+    width: 80%; /* Full width inputs */
     padding: 10px;
     border: 1px solid #BDC3C7; /* Light gray border */
     border-radius: 5px; /* Rounded corners */
@@ -166,15 +185,15 @@ button:hover {
         display: none; /* Hide the navigation links */
         flex-direction: column; /* Stack links vertically */
         position: absolute;
-        background-color: #34495E; /* Match header background */
-        width: 100%;
-        left: 0;
-        top: 60px; /* Below the header */
+       width: 100%;
+        left: 50px;
+        top: 0px; /* Below the header */
         z-index: 1000;
+        color: #010508;
     }
     
     nav ul.show {
-        display: flex; /* Show links when toggled */
+        display: inline; /* Show links when toggled */
     }
     
     .menu-toggle {
@@ -190,4 +209,6 @@ button:hover {
     .book-item {
         flex: 1 0 100%; /* One item per row on very small screens */
     }
+
+    
 }
